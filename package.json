@@ -11,7 +11,6 @@
     "typescript": "^5.0.3"
   },
   "types": "dist/index.d.ts",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/JoaoVictor6/my-components/issues"
   },
-  "homepage": "https://github.com/JoaoVictor6/my-components#readme"
+  "homepage": "https://github.com/JoaoVictor6/my-components#readme",
+  "devDependencies": {
+    "@stitches/react": "^1.2.8"
+  }
 }
