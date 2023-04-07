@@ -19,6 +19,6 @@ jobs:
           # Defaults to the user or organization that owns the workflow file
           scope: '@joaovictor6'
       - run: pnpm install --prod
-      - run: pnpm publish --no-git-checks
+      - run: pnpm publish --no-git-checks --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
