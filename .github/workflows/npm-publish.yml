@@ -18,7 +18,16 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           # Defaults to the user or organization that owns the workflow file
           scope: '@joaovictor6'
+      - name: Configure git
+        run: |
+          git config user.email "santosjoao.dev@gmail.com"
+          git config user.name "João Victor"
+      - run: pnpm install
+      - run: pnpm rollup -c
+      - run: pnpm version patch -m "Release %s 📣"
+      - run: git push
       - run: pnpm install --prod
+      # publish
       - run: pnpm publish --no-git-checks --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
