@@ -1,28 +1,28 @@
 {
   "name": "@joaovictor6/my-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "scripts": {
-    "rollup": "rollup -c"
-  },
-  "publishConfig": {
-    "registry": "registry": "https://npm.pkg.github.com/joaovictor6"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "types": "dist/index.d.ts",
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^24.0.1",
-    "@rollup/plugin-node-resolve": "^15.0.2",
-    "@rollup/plugin-typescript": "^11.1.0",
-    "@types/react": "^18.0.33",
+  "dependencies": {
     "react": "^18.2.0",
     "rollup": "^3.20.2",
     "rollup-plugin-dts": "^5.3.0",
     "tslib": "^2.5.0",
     "typescript": "^5.0.3"
-  }
+  },
+  "types": "dist/index.d.ts",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoVictor6/my-components.git"
+  },
+  "author": "joaovictor6",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaoVictor6/my-components/issues"
+  },
+  "homepage": "https://github.com/JoaoVictor6/my-components#readme"
 }
