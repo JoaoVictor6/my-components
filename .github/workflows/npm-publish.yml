@@ -15,7 +15,7 @@ jobs:
         with:
           version: 8.1.1
           node-version: '18.x'
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: 'https://registry.npmjs.org'
           # Defaults to the user or organization that owns the workflow file
           scope: '@joaovictor6'
       - name: Configure git
