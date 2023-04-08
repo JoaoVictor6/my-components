@@ -25,6 +25,8 @@ jobs:
       - run: pnpm install
       - run: pnpm rollup -c
       - run: pnpm version patch -m "Release %s 📣"
+      - run: git add .
+      - run: git commit -m "[RELEASE]"
       - run: git push origin main
       - run: pnpm install --prod
       # publish
