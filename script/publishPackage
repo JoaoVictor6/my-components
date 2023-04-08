@@ -1,0 +1,5 @@
+#! /bin/bash
+
+pnpm install --prod
+pnpm version patch -m "Release %s 📣"
+pnpm publish
