@@ -15,7 +15,7 @@ jobs:
         with:
           version: 8.1.1
           node-version: '18.x'
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: 'https://npm.pkg.github.com'
           scope: '@joaovictor6'
       - name: Configure git
         run: |
