@@ -5,6 +5,6 @@ This repo will be growing with time, if you have some improvements or ideas, cre
 
 
 ## Goals
-- [ ] Add Storybook
+- [x] Add Storybook
 - [ ] Maybe some tests
 - [ ] Improve NPM publish(Issue [#01](https://github.com/JoaoVictor6/my-components/issues/1))
