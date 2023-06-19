@@ -1,7 +1,7 @@
 name: Publish package to GitHub Packages
 on:
   release:
-    types: [published]
+    types: [created]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,6 +26,7 @@ jobs:
       - run: pnpm version patch -m "Release %s 📣"
       - run: pnpm install --prod
       # publish
-      - run: pnpm publish --no-git-checks --access public
+        - name: Publish package on NPM 📦
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
